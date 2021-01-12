@@ -6,7 +6,6 @@ import AppLoading from 'expo-app-loading'
 import 'react-native-get-random-values'
 import { v4 as uuid } from 'uuid'
 import ToDo from './ToDo'
-import { object } from 'prop-types';
 
 const { height, width } = Dimensions.get("window");
 
@@ -111,6 +110,7 @@ export default function App() {
           returnKeyType={"done"}
           autoCorrect={false}
           onSubmitEditing={addToDo}
+          
         />
         <ScrollView contentContainerStyle={styles.toDos}>
           {Object.values(toDos)

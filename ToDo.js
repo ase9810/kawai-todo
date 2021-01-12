@@ -47,6 +47,7 @@ export default function ToDo(props) {
                             e.stopPropagation();
                             updateValue();
                         }}
+                        underlineColorAndroid={"transparent"}
                     />
                 ) : (
                         <Text style={[
